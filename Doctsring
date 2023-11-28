@@ -1,0 +1,44 @@
+* Docstring stands for "Python documentation strings.
+* Docstring:Additional informat apart from the function or class or method.
+* Declaring docstring : using """ """ (triple quotes) just below class,method,or function declaration.All functions should have a doc string.
+* Accessing doc string: It can be accessed using the __doc__ method of object or using the help function.
+
+
+
+Eg1:
+>>> def greet():
+...     """This is a function"""
+...     print("Hello")
+... 
+>>> greet()
+ o/p: Hello
+
+
+
+
+Eg2:Accessing Docstring
+
+>>> def greet():
+...     """This is a greet function."""
+...     print("Hello")
+... 
+>>> print(greet.__doc__)
+This is a greet function.
+
+
+
+
+Eg3:
+def my_function():
+    """
+    This is the docstring for my_function.
+    """
+
+class MyClass:
+    def my_method(self):
+        """
+        This is the docstring for my_method.
+        """
+
+print(my_function.__doc__)
+print(MyClass.my_method.__doc__)
